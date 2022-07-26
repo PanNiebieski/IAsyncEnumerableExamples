@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IAsyncEnumerable01", "ConsoleApp25\IAsyncEnumerable01.csproj", "{3322B386-885F-46F7-8186-D29F7ABA0473}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IAsyncEnumerable02", "IAsyncEnumerable02\IAsyncEnumerable02.csproj", "{4D54D617-6205-4C63-B982-6898735A18E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IAsyncEnumerable02", "IAsyncEnumerable02\IAsyncEnumerable02.csproj", "{4D54D617-6205-4C63-B982-6898735A18E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IAsyncEnumerable02_02", "IAsyncEnumerable02_02\IAsyncEnumerable02_02.csproj", "{9A3184BC-7855-48F7-9769-09191E2D19FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IAsyncEnumerable02_02", "IAsyncEnumerable02_02\IAsyncEnumerable02_02.csproj", "{9A3184BC-7855-48F7-9769-09191E2D19FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IAsyncEnumerable03", "IAsyncEnumerable03\IAsyncEnumerable03.csproj", "{5F5DDE78-D8DA-4A24-8164-1F0EA7329257}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IAsyncEnumerable03", "IAsyncEnumerable03\IAsyncEnumerable03.csproj", "{5F5DDE78-D8DA-4A24-8164-1F0EA7329257}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IAsyncEnumerable01", "IAsyncEnumerable01\IAsyncEnumerable01.csproj", "{42D62923-9543-41CD-B980-9383749DB11D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEnumerableExample", "IEnumerable\IEnumerableExample.csproj", "{A56164EC-D03E-4AE9-95E2-EF107E118526}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3322B386-885F-46F7-8186-D29F7ABA0473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3322B386-885F-46F7-8186-D29F7ABA0473}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3322B386-885F-46F7-8186-D29F7ABA0473}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3322B386-885F-46F7-8186-D29F7ABA0473}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4D54D617-6205-4C63-B982-6898735A18E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4D54D617-6205-4C63-B982-6898735A18E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D54D617-6205-4C63-B982-6898735A18E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +31,14 @@ Global
 		{5F5DDE78-D8DA-4A24-8164-1F0EA7329257}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F5DDE78-D8DA-4A24-8164-1F0EA7329257}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F5DDE78-D8DA-4A24-8164-1F0EA7329257}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42D62923-9543-41CD-B980-9383749DB11D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42D62923-9543-41CD-B980-9383749DB11D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42D62923-9543-41CD-B980-9383749DB11D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42D62923-9543-41CD-B980-9383749DB11D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A56164EC-D03E-4AE9-95E2-EF107E118526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A56164EC-D03E-4AE9-95E2-EF107E118526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A56164EC-D03E-4AE9-95E2-EF107E118526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A56164EC-D03E-4AE9-95E2-EF107E118526}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

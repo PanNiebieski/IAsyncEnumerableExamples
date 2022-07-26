@@ -73,7 +73,6 @@ async Task SolutionOne()
 
     timer.Stop();
     Console.WriteLine(timer.ElapsedMilliseconds);
-
 }
 
 //Przetwarzanie sekwencji równolegle

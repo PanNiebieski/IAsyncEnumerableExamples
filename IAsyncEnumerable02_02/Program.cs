@@ -4,7 +4,7 @@
 using System.Runtime.CompilerServices;
 
 IAsyncEnumerable<string> folders = GetFolders();
-
+List<string> folders2 = await GetFolders().ToListAsync();
 
 var collection3_1 = folders
                     .Select( f => GetFilesInfoAsync(f))
@@ -20,22 +20,20 @@ await foreach (var fileinfos in collection3_1)
     }
 }
 
-//var collection3_2 = folders
-//                    .SelectAwait(async f => await GetFilesInfoAsync2(f))
-//                    .Select(f => f.WhereAwait
-//                    (async file => await IsSusAsync(file)));
 
 
 
+var collection3_2 = folders
+                    .SelectAwait(async f => await GetFilesInfoAsync2(f))
+                    .Select(f => f.WhereAwait
+                    (async file => await IsSusAsync(file)));
 
 
 
-
-
-//var collection3_3 = folders
-//                    .SelectAwait(async f => await GetFilesInfoAsync2(f))
-//                    .Select(f => f.ToAsyncEnumerable().WhereAwait
-//                    (async file => await IsSusAsync(file)));
+var collection3_3 = folders
+                    .SelectAwait(async f => await GetFilesInfoAsync2(f))
+                    .Select(f => f.ToAsyncEnumerable().WhereAwait
+                    (async file => await IsSusAsync(file)));
 
 
 //await foreach (var fileinfos in collection3_3)

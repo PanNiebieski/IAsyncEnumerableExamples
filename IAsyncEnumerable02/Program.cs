@@ -1,5 +1,6 @@
 ﻿
-List<string> foldersExampleLinqAsync = await GetFolders().ToListAsync();
+List<string> foldersExampleLinqAsync = 
+    await GetFolders().ToListAsync();
 
 
 List<string> folders = new List<string>();
@@ -24,7 +25,7 @@ await foreach(var fileinfos in collection1_1)
 
 }
 
-var collection1_2 = folders
+var collection1_2 = GetFolders()
                     .Select(f => GetFilesInfoAsync(f))
                     .Select
                     (files => files.Select
@@ -59,14 +60,18 @@ var collection2_2 = folders
 
 //var collection2_1 = folders
 //                    .Select(f => GetFilesInfoAsync(f))
-//                    .Select(f => f.Where(async file => await IsSusAsync(file)));
+//                    .Select
+//                    (f => f.Where
+//                    (async file => await IsSusAsync(file)));
 
 
 
 
 var collection2_1_1 = folders
                     .Select(f => GetFilesInfoAsync(f))
-                    .Select(f => f.Where(file => IsSusAsync(file).Result));
+                    .Select
+                    (f => f.
+                    Where(file => IsSusAsync(file).Result));
 
 
 
@@ -124,9 +129,9 @@ async IAsyncEnumerable<string> GetFolders()
     }
 }
 
-async IAsyncEnumerable<FileInfo> GetFilesInfoAsync(string folder)
+async IAsyncEnumerable<FileInfo> 
+    GetFilesInfoAsync(string folder)
 {
-
     var directory = new DirectoryInfo(folder);
 
     foreach (var item in directory.
